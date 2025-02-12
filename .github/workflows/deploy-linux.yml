@@ -41,7 +41,7 @@ jobs:
       working-directory: ./client
       run: npm install
 
-    - name: Install Node.js Dependencies
+    - name: Build Vue Web App
       working-directory: ./client
       run: npm run build
 

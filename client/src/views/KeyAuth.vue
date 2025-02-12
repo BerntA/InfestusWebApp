@@ -24,7 +24,7 @@
         <h2>You are about to sign-up for Infestus Closed Beta, please sign-in through Steam!</h2>
         <h3 v-if="keysAvailable >= 0">There are {{ keysAvailable }} key(s) left!</h3>
         <div id="steam-auth">
-          <form action="https://steamcommunity.com/openid/login" method="post">
+          <form action="https://steamcommunity.com/openid/login" method="get">
             <input type="hidden" readonly name="openid.identity"
               value="http://specs.openid.net/auth/2.0/identifier_select" />
             <input type="hidden" readonly name="openid.claimed_id"

@@ -1,6 +1,7 @@
 ﻿using lib.Models;
 using lib.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Primitives;
 using System.Net;
 using System.Text.RegularExpressions;
@@ -122,8 +123,8 @@ public class SteamAuthController : ControllerBase
 
         formDict.Add("openid.mode", "check_authentication");
 
-        using var content = new FormUrlEncodedContent(formDict);
-        using var response = await _httpClient.PostAsync(SteamLogin, content);
+        var queryString = QueryHelpers.AddQueryString(SteamLogin, formDict!);
+        using var response = await _httpClient.GetAsync(queryString);
 
         response.EnsureSuccessStatusCode();
         var result = await response.Content.ReadAsStringAsync();
