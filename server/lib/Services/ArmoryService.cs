@@ -108,7 +108,10 @@ public class ArmoryService
             return new GuildDetails
             {
                 Guild = guild.Adapt<GuildDto>(),
-                Members = guildies.OrderByDescending(o => o.GuildRank).Adapt<List<GuildMemberDto>>(),
+                Members = guildies
+                    .OrderByDescending(o => o.GuildRank)
+                    .ThenByDescending(o => o.Level)
+                    .Adapt<List<GuildMemberDto>>(),
             };
         });
     }
