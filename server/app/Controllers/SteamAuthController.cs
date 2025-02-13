@@ -51,7 +51,7 @@ public class SteamAuthController : ControllerBase
         if (string.IsNullOrEmpty(steamKey))
         {
             var summary = await _steamApiService.GetPlayerSummary(steamId64);
-            if (summary is null)
+            if (summary is null || summary.ProfileState <= 0) // must have a configured profile!
             {
                 return new OkObjectResult(new SteamAuthResponse
                 {
@@ -60,7 +60,6 @@ public class SteamAuthController : ControllerBase
                     StatusCode = (int)HttpStatusCode.NotFound,
                 });
             }
-
             steamKey = await _keyAuthService.RegisterSteamKeyForUser(steamId64Num);
         }
 
