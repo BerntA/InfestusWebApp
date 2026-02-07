@@ -120,7 +120,7 @@
         </div>
         <br><br>
         <div id="footercontent">
-                <h4>&COPY; 2015-2025 Team Infestus</h4>
+                <h4>&COPY; 2015-2026 Team Infestus</h4>
                 <h5>Valve, Steam & Source are trademarks of Valve.</h5>
         </div>
     </div>

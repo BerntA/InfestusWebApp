@@ -4,7 +4,7 @@
     </div>
 
     <div id="nav_global">
-      <router-link to="/"><v-icon>mdi-chevron-left</v-icon><img src="../assets/images/icon.png" width="30" height="30"
+      <router-link to="/" style="text-decoration: none;"><v-icon>mdi-chevron-left</v-icon><img src="../assets/images/icon.png" width="30" height="30"
           class="nav_global_icon"></router-link>
     </div>
 

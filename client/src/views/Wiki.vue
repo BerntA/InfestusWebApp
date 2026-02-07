@@ -6,7 +6,7 @@
     <div id="nav_global" style="border-bottom: none;position: fixed;">
       <v-row>
         <v-col cols="auto">
-          <router-link to="/"><v-icon>mdi-chevron-left</v-icon><img src="../assets/images/icon.png" width="30" height="30" class="nav_global_icon"></router-link>
+          <router-link to="/" style="text-decoration: none;"><v-icon>mdi-chevron-left</v-icon><img src="../assets/images/icon.png" width="30" height="30" class="nav_global_icon"></router-link>
         </v-col>
         <v-col cols="1"></v-col>
         <v-col style="margin:auto">

@@ -4,7 +4,7 @@
     </div>
 
     <div id="nav_global">
-      <router-link to="/"><v-icon>mdi-chevron-left</v-icon><img src="../assets/images/icon.png" width="30" height="30" class="nav_global_icon"></router-link>
+      <router-link to="/" style="text-decoration: none;"><v-icon>mdi-chevron-left</v-icon><img src="../assets/images/icon.png" width="30" height="30" class="nav_global_icon"></router-link>
     </div>
 
     <div style="height: 60px;"></div>
@@ -267,8 +267,8 @@
       <ul class="changelogitem">
               <li>Casting spells will reset the AFK timer.</li>
         <li>Botting with +attack will no longer reset the AFK timer.</li>
-        <li>You will now lose 2.5% of your coins if you die in the world (if you have more than 500 coins in your inventory), instead of 10%.</li>
-        <li>You will now lose 5% of your coins if you die in a dungeon (if you have more than 500 coins in your inventory), instead of 10%.</li>
+        <li>You will now lose 2.5% of your gold if you die in the world (if you have more than 500 gold in your inventory), instead of 10%.</li>
+        <li>You will now lose 5% of your gold if you die in a dungeon (if you have more than 500 gold in your inventory), instead of 10%.</li>
         <li>Removed level requirements from dungeons.</li>
         <li>Dungeons now support up to 10 players instead of just 5.</li>
         <li>Weapons & Armor particles will stop emission when leaving PVS.</li>
@@ -379,7 +379,7 @@
       <h4>Balancing & Item Data</h4>
       <ul class="changelogitem">
               <li>Abomination no longer gives any XP.</li>
-        <li>Abomination will give 200 coins instead of 250.</li>
+        <li>Abomination will give 200 gold instead of 250.</li>
         <li>Fixed attack speed for all ranged NPCs, rebel, bandit ranger will fire slower, and also skeletal rangers.</li>
       </ul>
 
@@ -1129,7 +1129,7 @@
               <li>Nerfed Skeletal Minion health by 150.</li>
               <li>Nerfed Skeletal Minion experience by 100.</li>
               <li>Skeletal Minions are 25% less resistant to magic.</li>
-              <li>Moroes the Summoner quest will give 2500 less experience and 500 less coins on completion.</li>
+              <li>Moroes the Summoner quest will give 2500 less experience and 500 less gold on completion.</li>
               <li>Changed focus cost for Melee Smash II from 75 to 55.</li>
               <li>Shadow of Keldroth's Whirlwind I spell will have a greater knockback, less cooldown and do 5 more damage.</li>
               <li>Healing Circle I will heal every 4.5 sec rather than 4 sec, and will do 10-20 healing rather than 14-33.</li>
@@ -1580,7 +1580,7 @@
           <div class="date">
               2018-03-03 : Patch 1.0.0.5
           </div>
-      <h5>Disclaimer: Due to the complexity of this patch and the amount of rebalancing, all characters have been nerfed a little, any level above 15 has been clamped to 15, if you had more than 8000 coins your money have been clamped to 8000.</h5>
+      <h5>Disclaimer: Due to the complexity of this patch and the amount of rebalancing, all characters have been nerfed a little, any level above 15 has been clamped to 15, if you had more than 8000 gold your money have been clamped to 8000.</h5>
       <h4>Code</h4>
       <h5>Core</h5>
           <ul class="changelogitem">
