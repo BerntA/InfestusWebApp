@@ -33,7 +33,7 @@
           <div>
             <p>Rewards</p>
             <p class="quest-info" v-if="item.exp">{{ item.exp }} experience</p>
-            <p class="quest-info" v-if="item.money">{{ item.money }} coins</p>
+            <p class="quest-info" v-if="item.money">{{ item.money }} gold</p>
             <p class="quest-info" v-for="rep in item.reputation" v-bind:key="rep.id">
               {{ rep.value }} rep with {{ rep.faction }}
             </p>

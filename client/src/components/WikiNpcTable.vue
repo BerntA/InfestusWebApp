@@ -23,7 +23,7 @@
           <div v-if="item.exp > 0 || item.moneyMin > 0 || item.reputation.some(o => o.ally == 'No')">
             <p>Rewards</p>
             <p class="npc-info" v-if="item.exp">{{ item.exp }} experience</p>
-            <p class="npc-info" v-if="item.moneyMin">{{ item.moneyMin }} coins</p>
+            <p class="npc-info" v-if="item.moneyMin">{{ item.moneyMin }} gold</p>
             <p class="npc-info" v-for="rep in item.reputation.filter(o => o.ally == 'No')" v-bind:key="rep.id">
               {{ rep.value }} rep with {{ rep.faction }}
             </p>
