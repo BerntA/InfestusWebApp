@@ -25,7 +25,6 @@ export default {
       items: [],
       headers: [
         { key: 'name', title: 'Title & Description' },
-        { key: 'obtainable', title: 'Obtainable', width: '50px' },
       ],
     }
   },
