@@ -40,9 +40,12 @@
             <p>Sells</p>
             <p class="npc-info" v-for="inv in item.inventory" v-bind:key="inv.itemID">
               <inventory-item-tool-tip :id="inv.itemID"></inventory-item-tool-tip> x {{ inv.quantity }},
-              <span>
-                {{ inv.sellPrice }}<v-img style="display: inline-block;top: 5px;" src="/images/wiki/coins.png" width="18"></v-img>
+              <span v-if="item.merchantCurrencyID > 0">
+                {{ inv.sellPrice }}<v-img style="display: inline-block;top: 5px;" :src="item.merchantCurrencyIcon" width="18"></v-img>
               </span>
+              <span v-else>
+                {{ inv.sellPrice }}<v-img style="display: inline-block;top: 5px;" src="/images/wiki/coins.png" width="18"></v-img>
+              </span>              
             </p>
           </div>
         </td>
@@ -62,7 +65,7 @@ export default {
   },
   mounted() {
     const zones = wiki['Zones']
-    this.items = wiki['NPCs'].map(item => {
+    this.items = wiki['NPCs'].filter(item => !item.isObjectType && (item.zoneID > 0)).map(item => {
       const zone = zones.find(o => o.id == item.zoneID)
       item.zoneName = (zone == null) ? '???' : zone.name
       return item
