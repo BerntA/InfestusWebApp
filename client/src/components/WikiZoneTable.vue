@@ -15,7 +15,7 @@ import wiki from '../assets/data/wiki.json'
 export default {
   name: "WikiZoneTable",
   mounted() {
-    this.items = wiki['Zones']
+    this.items = wiki['zones']
   },
   props: {
     search: String,

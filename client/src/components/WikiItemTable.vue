@@ -18,7 +18,7 @@ import wiki from '../assets/data/wiki.json'
 export default {
   name: "WikiItemTable",
   mounted() {
-    this.items = wiki['Items'].map(item => {
+    this.items = wiki['items'].map(item => {
       item.itemInfo = `${item.itemInfo1} ${item.itemInfo2}`
       return item
     })

@@ -60,8 +60,8 @@ export default {
     InventoryItemToolTip,
   },
   mounted() {
-    const zones = wiki['Zones']
-    this.items = wiki['Quests'].map(item => {
+    const zones = wiki['zones']
+    this.items = wiki['quests'].map(item => {
       const zone = zones.find(o => o.id == item.zoneID)
       item.zoneName = (zone == null) ? '???' : zone.name
       item.range = item.levelMin

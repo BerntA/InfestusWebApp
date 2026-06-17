@@ -56,7 +56,7 @@ export default {
   async mounted() {
     window.scrollTo(0, 0)
 
-    wiki['Zones'].forEach(zone => {
+    wiki['zones'].forEach(zone => {
       this.zones[zone.id] = zone.name
     });
 

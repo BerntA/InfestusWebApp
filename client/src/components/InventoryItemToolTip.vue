@@ -96,7 +96,7 @@ export default {
     id: {
       immediate: true,
       handler(val) {
-        this.item = wiki['Items'].find(o => o.id == val)
+        this.item = wiki['items'].find(o => o.id == val)
       },
     },
   },

@@ -64,13 +64,13 @@ export default {
     InventoryItemToolTip,
   },
   mounted() {
-    const zones = wiki['Zones']
-    this.items = wiki['NPCs'].filter(item => !item.isObjectType && (item.zoneID > 0)).map(item => {
+    const zones = wiki['zones']
+    this.items = wiki['npcs'].filter(item => !item.isObjectType && (item.zoneID > 0)).map(item => {
       const zone = zones.find(o => o.id == item.zoneID)
       item.zoneName = (zone == null) ? '???' : zone.name
       return item
     })
-    this.quests = wiki['Quests']
+    this.quests = wiki['quests']
   },
   props: {
     search: String,

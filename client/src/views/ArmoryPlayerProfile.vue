@@ -126,8 +126,8 @@ export default {
   },
   async mounted() {
     window.scrollTo(0, 0)
-    this.itemWikiData = wiki['Items']
-    this.factionWikiData = wiki['Factions']
+    this.itemWikiData = wiki['items']
+    this.factionWikiData = wiki['factions']
     await this.fetchPlayerData(this.id)
   },
   data() {

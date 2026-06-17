@@ -31,7 +31,7 @@ import wiki from '../assets/data/wiki.json'
 export default {
   name: "WikiSpellTable",
   mounted() {
-    this.items = wiki['Spells']
+    this.items = wiki['spells']
   },
   props: {
     search: String,

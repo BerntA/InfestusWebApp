@@ -15,7 +15,7 @@ import wiki from '../assets/data/wiki.json'
 export default {
   name: "WikiFactionTable",
   mounted() {
-    this.items = wiki['Factions']
+    this.items = wiki['factions']
   },
   props: {
     search: String,
