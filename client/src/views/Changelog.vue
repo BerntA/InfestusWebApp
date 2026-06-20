@@ -42,6 +42,7 @@
         <li>Soundscape entities are now entirely client-side.</li>
         <li>Area info entities are now entirely client-side.</li>
         <li>Fixed env_explosion ignore entity.</li>
+        <li>NPCs, player checker, player blocker and player data filter can now check against morph.</li>
         <li>prop_dynamic and prop_door_rotating can now use radius glow.</li>
         <li>Lights, scripted_sequence and aiscripted_schedule are now server-only.</li>
         <li>Propper related entities will not consume / affect entity limits in the actual map when compiling the BSP,
@@ -136,6 +137,7 @@
         <li>Added world map labels (info_map_label), you can set if you want them to always show, within a given radius,
           or
           not at all.</li>
+        <li>Improved scrolling for social panel, trading panel, quest list, etc.</li>
         <li>Disabled the annoying click sounds that play when you click the various buttons, items, etc.</li>
       </ul>
 
