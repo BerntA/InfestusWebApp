@@ -9,6 +9,53 @@
     </div>
 
     <div style="height: 60px;"></div>
+	
+    <div class="cont">
+      <div class="date">
+        2026-09-29 : Patch 1.0.2.6
+      </div>
+      <h4>Code</h4>
+
+      <h5>Entities</h5>
+      <ul class="changelogitem">
+		<li>Added dynamic skybox rendering, this will allow us to change the skybox properly during the day-night cycle, and to override it using func_skybox_override.</li>
+		<li>Melee and ranged spells that do magic damage will now actually do magic damage.</li>
+      </ul>
+
+      <h5>NPCs</h5>
+      <ul class="changelogitem">
+		<li>Added frozen/slow immunity flags for NPCs.</li>
+      </ul>
+
+      <h4>Maps</h4>
+      <ul class="changelogitem">
+        <li>
+          <b>Scorchridge</b>
+          <ul class="changelogitem">
+            <li>Dreadwood passage will now have a different skybox.</li>
+			<li>Kolissis, Bone Lord and Ghouls will be immune to slow/freeze.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>Balancing & Item Data</h4>
+      <ul class="changelogitem">
+		<li>Lowered the drop rates for Bloodstone tokens down to 50% for normal mobs.</li>
+		<li>Buffed Flavio's attack speed, polymorph frequency and made him immune to slow.</li>
+		<li>Buffed Vizariel's armor and magic damage, and made him immune to slow.</li>
+		<li>Vizariel's ethereal minions will heal him based on how much damage they do to you.</li>
+		<li>Sir Henry will spin more often!</li>
+		<li>Ethereal Guards will now be immune to slow.</li>
+		<li>Most bosses will be immune to slow.</li>
+		<li>You can no longer sell Token of Valor.</li>
+      </ul>
+
+      <h4>Misc</h4>
+      <ul class="changelogitem">
+		<li>Fixed skybox glitches when the FOV > 90.</li>
+		<li>Updated the old hammer config.</li>
+      </ul>
+    </div>
 
     <div class="cont">
       <div class="date">
